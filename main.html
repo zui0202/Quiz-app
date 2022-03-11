@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <!-- HomePage -->
+    <div class="homePage custom-page">
+      <div class="home-box custom-box">
+        <h3>Javascript Quiz</h3>
+        <button type="button" class="btn" onclick="startQuiz()">Play</button>
+      </div>
+    </div>
+
+    <!-- QuizPage -->
+    <div class="quizPage custom-page hide">
+      <div class="quiz-box custom-box">
+        <div class="question-progress">
+          <p class="question-num">Question of 1/4</p>
+          <progress value="25" max="100" class="question-progress-bar"></progress>
+        </div>
+        <div class="current-score">
+          <p>score</p>
+          <h1 class="curScore">1</h1>
+        </div>
+        <div class="question-box">
+          <div class="question-text"></div>
+          <div class="option-container"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- resultPage -->
+    <div class="resultPage custom-page hide">
+      <div class="result-box custom-box">
+        <h1 class="result"></h1>
+        <button type="button" class="btn" onclick="playAgain()">Play Again</button>
+      </div>
+    </div>
+
+    <!-- javascript -->
+    <script type="text/javascript" src="question.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+  </body>
+</html>
